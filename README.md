@@ -1,6 +1,12 @@
 <h1 align="center">Nitrogen | World's fastest Python Gen</h1>
 
-<p align="center"> ![GitHub](https://img.shields.io/github/license/luixiuno/nitrogen) ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCv3gnLEJJgvnmhzLx9lPuTA?style=social) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/luixiuno/nitrogen) </p>
+<div align="center">
+
+![GitHub](https://img.shields.io/github/license/luixiuno/nitrogen)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCv3gnLEJJgvnmhzLx9lPuTA?style=social)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/luixiuno/nitrogen)
+
+</div>
 
 <p align="center">
   <img src="https://us-east-1.tixte.net/uploads/luixiuno.is-from.space/explorer_KJCUyKE6w2.gif" alt="DownT0wn" />
