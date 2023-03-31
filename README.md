@@ -1,21 +1,15 @@
-<h1 align="center">Nitrogen | World's fastest Python Gen</h1>
+<h1 align="center">Nitrogen | github.com/luixiuno</h1>
 
 <div align="center">
-
-![GitHub](https://img.shields.io/github/license/luixiuno/nitrogen)
-![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCv3gnLEJJgvnmhzLx9lPuTA?style=social)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/luixiuno/nitrogen)
 
 </div>
 
 <p align="center">
   <img src="https://us-east-1.tixte.net/uploads/luixiuno.is-from.space/explorer_KJCUyKE6w2.gif" alt="DownT0wn" />
 </p>
-As you probably saw already in the GIF, this gen is G O A T E D, it only consists of: random, string, os, concurrent, colorama
 
-very simple
-
-CHECKER COMING SOON, but for now, goodbye.
-
-
-Leave a star for the love of god
+<h1 align="center">Guidelines</h1>
+You shall not:<br><br>
+Use my software for commercial use without my (github.com/luixiuno) authorization.<br>
+Use my software without crediting me<br>
+Distribute closed sourced copies of my software without my (github.com/luixiuno) authorization.
