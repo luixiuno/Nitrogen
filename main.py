@@ -1,42 +1,43 @@
-import random
 import string
+import secrets
 import os
 from concurrent.futures import ThreadPoolExecutor
-from colorama import Fore
+from colorama import Fore, init
+
 generated = 1
-def nitrogen(letters_and_digits = string.ascii_letters + string.digits, N=16):
-    while True:
-        letters_and_digits = string.ascii_letters + string.digits
-        f = open("nitros.txt", "a")
-        f.write("\nhttps://discord.gift/" + ''.join((random.choice(letters_and_digits) for i in range(N))))
-        f.close
-def main():
-    os.system("cls")
-    print(Fore.GREEN + """.__   __.  __  .___________..______        ______     _______  _______ .__   __. 
+init(convert=True) # colorama init for windows
+
+nitrogenAscii = """.__   __.  __  .___________..______        ______     _______  _______ .__   __. 
 |  \ |  | |  | |           ||   _  \      /  __  \   /  _____||   ____||  \ |  | 
 |   \|  | |  | `---|  |----`|  |_)  |    |  |  |  | |  |  __  |  |__   |   \|  | 
 |  . `  | |  |     |  |     |      /     |  |  |  | |  | |_ | |   __|  |  . `  | 
 |  |\   | |  |     |  |     |  |\  \----.|  `--'  | |  |__| | |  |____ |  |\   | 
-|__| \__| |__|     |__|     | _| `._____| \______/   \______| |_______||__| \__|""")
+|__| \__| |__|     |__|     | _| `._____| \______/   \______| |_______||__| \__|"""
+vacWTF = "                           AS SEEN ON VACBAN.WTF\n                       https://github.com/luixiuno"
+
+def nitrogen(letters_and_digits = string.ascii_letters + string.digits, N=16):
+    while True:
+        f = open("nitros.txt", "a")
+        f.write("\nhttps://discord.gift/" + ''.join((secrets.choice(letters_and_digits) for _ in range(N))))
+        f.close
+
+def main():
+    os.system("cls")
+    print(Fore.GREEN + nitrogenAscii)
     print("\n")
-    print("                           AS SEEN ON VACBAN.WTF\n                       https://github.com/luixiuno")
+    print(Fore.WHITE + vacWTF)
     with open("nitros.txt",'r+') as file:
       file.truncate(0)
     f = open("nitros.txt", "a")
-    f.write(""".__   __.  __  .___________..______        ______     _______  _______ .__   __. 
-|  \ |  | |  | |           ||   _  \      /  __  \   /  _____||   ____||  \ |  | 
-|   \|  | |  | `---|  |----`|  |_)  |    |  |  |  | |  |  __  |  |__   |   \|  | 
-|  . `  | |  |     |  |     |      /     |  |  |  | |  | |_ | |   __|  |  . `  | 
-|  |\   | |  |     |  |     |  |\  \----.|  `--'  | |  |__| | |  |____ |  |\   | 
-|__| \__| |__|     |__|     | _| `._____| \______/   \______| |_______||__| \__|\n\n                           AS SEEN ON VACBAN.WTF\n                       https://github.com/luixiuno""")
+    f.write(nitrogenAscii + "\n" + vacWTF)
     f.close()
-    threads = input(Fore.WHITE + "\nThreads (FREE YOUR CPU SO THE THREADS CAN RUN SMOOOOOOTHLY): ")
+    threads = input(Fore.WHITE + "\nThreads (Higher thread count = more cpu usage): ")
     executor = ThreadPoolExecutor(int(threads))
     future = executor.submit(nitrogen)
+    future.result() # wait for the future to complete
 
 # random string with characters picked from ascii_lowercase
 if __name__ == "__main__":
     main()
-    
 else:
-    raise Exception("WE DO NOT ALLOW SKIDDIES 💀💀💀 | WE DO NOT ALLOW SKIDDIES 💀💀💀 | WE DO NOT ALLOW SKIDDIES 💀💀💀 | WE DO NOT ALLOW SKIDDIES 💀💀💀")
+    raise Exception("Why are you importing this? Just run it. (main.py)")
